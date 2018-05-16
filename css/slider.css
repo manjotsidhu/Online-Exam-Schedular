@@ -1,7 +1,7 @@
 .ms-s1 {
-  margin: 80px 35%;
-  width: 250px;
-  height: 200px;
+  margin: 8px 35%;
+  width: 270px;
+  height: 250px;
   position: relative;
   perspective: 1000px;
 }
@@ -17,7 +17,7 @@
   display: block;
   position: absolute;
   background: #000;
-  width: 250px;
+  width: 270px;
   height: 200px;
   line-height: 200px;
   font-size: 5em;
@@ -52,23 +52,18 @@
   background: #8c6239;
 }
 
+.next:active, .prev:active,
 .next, .prev {
-  color: #444;
+  position:relative;
   display: inline-block;
-  top: 100px;
-  margin: 0 160px;
+  top: 160px;
+  left: 120px;
+  right: 5em;
+  margin: 0 0;
   padding: 1em 2em;
   cursor: pointer;
-  background: #CCC;
-  border-radius: 5px;
-  border-top: 1px solid #FFF;
-  box-shadow: 0 5px 0 #999;
-  transition: box-shadow 0.1s, top 0.1s;
 }
-.next:hover, .prev:hover { color: #000; }
-.next:active, .prev:active {
-  top: 104px;
-  box-shadow: 0 1px 0 #999;
+
+.next:active, .next {
+	left:48em;
 }
-.next { right: 5em; }
-.prev { left: 5em; }
